@@ -1,0 +1,16 @@
+pipeline {
+    agent { node { label 'workstation'} }
+
+    environment {
+          SSH = credentials('SSH')
+          }
+
+    stages {
+        stage('environment variable demo') {
+            steps {
+                echo 'environment credentials'
+                sh 'env'
+            }
+        }
+    }
+}
