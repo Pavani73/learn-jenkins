@@ -1,0 +1,19 @@
+ipeline {
+    agent { node { label 'workstation'} }
+
+    stages {
+        stage('workstation agent demo') {
+            steps {
+                echo 'Hello World1'
+            }
+        }
+    }
+}
+
+post{
+    always {
+       sh 'agent demo success'
+       }
+    }
+
+}
