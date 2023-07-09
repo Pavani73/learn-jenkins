@@ -15,5 +15,3 @@ post{
        sh 'agent demo success'
        }
     }
-
-}
