@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'environment credentials'
                 sh 'env'
-                Sh 'echo APP_INPUT - $APP_INPUT'
+                sh 'echo APP_INPUT - $APP_INPUT'
             }
         }
     }
