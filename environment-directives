@@ -9,6 +9,10 @@ pipeline {
          ansiColor('xterm')
          }
 
+     parameters { string(name: 'APP_INPUT', defaultValue:'', description: 'JUST INPUT') }
+
+     text
+
     stages {
         stage('environment variable demo') {
             steps {
