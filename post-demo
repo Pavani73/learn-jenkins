@@ -2,7 +2,7 @@ pipeline {
     agent { node { label 'workstation'} }
 
     stages {
-        stage('workstation agent demo') {
+        stage('workstation agent demo with post') {
             steps {
                 echo 'Hello World1'
             }
