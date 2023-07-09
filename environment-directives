@@ -5,6 +5,9 @@ pipeline {
           SSH = credentials('SSH')
           DEMO_URL = "google.com"
           }
+     options {
+         ansiColor('xterm')
+         }
 
     stages {
         stage('environment variable demo') {
