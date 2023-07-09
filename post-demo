@@ -2,13 +2,13 @@ pipeline {
     agent { node { label 'workstation'} }
 
     stages {
-        stage('workstation agent demo with post') {
+        stage('workstation post') {
             steps {
                 echo 'Hello World1'
             }
         }
     }
-post{
+post {
     always {
        sh 'agent demo success'
        }
