@@ -1,0 +1,23 @@
+pipeline {
+    agent { node { label 'workstation'} }
+
+    stages {
+        stage('Built stage') {
+            steps {
+                echo 'building a project'
+            }
+        }
+
+          stage('test stage') {
+                      steps {
+                          echo 'testing project'
+                      }
+          }
+
+          stage('Deploy stage') {
+                      steps {
+                          echo 'deploy project'
+                      }
+        }
+    }
+}
